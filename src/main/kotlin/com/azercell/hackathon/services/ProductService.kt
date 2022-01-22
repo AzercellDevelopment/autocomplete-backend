@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service
 class ProductService(private val productRepository: ProductRepository) {
     fun getAll(): MutableIterable<Product> = productRepository.findAll()
     fun getProductsByCategoryId(id: Long): MutableIterable<Product> = productRepository.findAllByCategoryId(id)
-    fun getById(id: Long): Product = productRepository.findById(id).orElseThrow { BaseException.ProductNotFound() }
+    fun getById(id: Long): Product = productRepository.findById(id).orElseThrow { BaseException.IdeaNotFound() }
 
     fun upvote(id: Long): Product {
         val product = productRepository.findById(id).orElseThrow { BaseException.ProductNotFound() }
