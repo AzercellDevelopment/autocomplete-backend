@@ -65,4 +65,3 @@ INSERT INTO proposals (problem_text, solution_text, title, upvotes, company_id) 
 INSERT INTO proposals (problem_text, solution_text, title, upvotes, company_id) VALUES('Problem', 'Solution', 'We have a problem', 96, 4);
 INSERT INTO proposals (problem_text, solution_text, title, upvotes, company_id) VALUES('Problem', 'Solution', 'We have a problem', 54, 5);
 INSERT INTO proposals (problem_text, solution_text, title, upvotes, company_id) VALUES('Problem', 'Solution', 'We have a problem', 69, 6);
-

@@ -8,5 +8,6 @@ import org.springframework.stereotype.Service
 @Service
 class BusinessIdeaService(private val ideasRepository: IdeasRepository) {
     fun getAll(): MutableList<BusinessIdea> = ideasRepository.findAll()
+    fun getAllByCategoryId(id: Long) = ideasRepository.findAllByCategoryId(id)
     fun getById(id: Long): BusinessIdea = ideasRepository.findById(id).orElseThrow { BaseException.IdeaNotFound() }
 }

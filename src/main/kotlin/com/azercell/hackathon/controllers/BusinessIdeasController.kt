@@ -12,6 +12,9 @@ class BusinessIdeasController(private val service: BusinessIdeaService) {
     @GetMapping("/ideas")
     fun retrieve() = service.getAll()
 
+    @GetMapping("/idea/category/{id}")
+    fun retrieveCategories(@PathVariable id: Long) = service.getAllByCategoryId(id)
+
     @GetMapping("/idea/{id}")
     fun retrieveById(@PathVariable id: Long) = service.getById(id)
 }
