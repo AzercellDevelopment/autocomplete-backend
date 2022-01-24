@@ -8,3 +8,9 @@ Azercell hackathon 2022
 3. Run the application (requires Java 11)
 
 Sample data is in **import.sql** file in **src/main/resources**. Tables will be automatically created and filled with sample data on every launch.
+
+
+ Jury
+ Shahin Mursalov 
+ Shamil Mehdiyev
+
